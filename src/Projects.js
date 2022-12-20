@@ -4,21 +4,21 @@ import fitness from "./media/Fitness.jpg"
 import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faChevronRight} from '@fortawesome/free-solid-svg-icons'
-import { useState, useEffect } from "react"
-import ReactCSSTransitionGroup from 'react-transition-group'; 
+import {faChevronLeft} from '@fortawesome/free-solid-svg-icons'
+import { useState, useEffect, useRef } from "react"
+import {CSSTransition, SwitchTransition} from 'react-transition-group'; 
+import { Link } from "react-router-dom"
 
 const Projects = () => {
+    const nodeRef = useRef(null);
 
     const rightButton = <FontAwesomeIcon icon={faChevronRight} size="2x"/>
+    const leftButton = <FontAwesomeIcon icon={faChevronLeft} size="2x"/>
 
-    const [isFadingFitness, setIsFadingFitness] = useState(false);
-
-    const [isFadingAirplane, setIsFadingAirplane] = useState(false);
-
-    const [isFadingMail, setIsFadingMail] = useState(false);
+    const [state, setState] = useState(null);
 
     useEffect(()=>{
-        setIsFadingMail(true);
+        setState('fitness');
     },[])
 
 
@@ -29,50 +29,101 @@ const Projects = () => {
         console.log(id);
         if (id === 'fitnessButton')
         {
-            setIsFadingFitness(true);
+            setState('airplane');
         }
         else if(id === 'airplaneButton')
         {
-            setIsFadingAirplane(true);
+            setState('mail');
         }
         else
         {
-            setIsFadingMail(true);
+            setState('fitness')
         }
-
     }
+    
+    const handleClickLeft = (e) => {
+        const id = e.currentTarget.id;
+        console.log(id);
+        if (id === 'fitnessButtonLeft')
+        {
+            setState('mail');
+        }
+        else if(id === 'airplaneButtonLeft')
+        {
+            setState('fitness');
+        }
+        else
+        {
+            setState('airplane')
+        }
+    }
+
+    
 
 
     return ( 
         <div className="projects">
-            <div className={isFadingMail ? "project revealed" : "project"}>
-                <div>
-                    <img src={fitness} alt="Not found" className="projectImage"/>
-                    <h2>FitnessApp</h2>
-                </div>
-                <div className="next">
-                    <button className="button" onClick={handleClick} id='fitnessButton'>{rightButton}</button>
-                </div>
-            </div>
-            <div className={isFadingFitness ? "project revealed" : "project"}>
-                <div>
-                    <img src={airplane} alt="Not found" className="projectImage"/>
-                    <h2>Airplane Reservation</h2>
-                </div>
-                <div className="next">
-                    <button className="button" onClick={handleClick} id='airplaneButton'>{rightButton}</button>
-                </div>
+            <SwitchTransition mode="out-in">
+                <CSSTransition key={state} nodeRef={nodeRef} addEndListener={(done)=>nodeRef.current.addEventListener("transitionend", done, false)} classNames="project">
+                <div ref={nodeRef}>
+                {state === "fitness" &&
+                
+                    <div className="projectLayout">
+                        <div className="next">
+                            <button className="button" onClick={handleClickLeft} id='fitnessButtonLeft'>{leftButton}</button>
+                        </div>
+                        <Link to="/projects/fitness" className="linkToProject">
 
-            </div>
-            <div className={isFadingAirplane ? "project revealed" : "project"}>
-                <div>
-                    <img src={mail} alt="Not found" className="projectImage"/>
-                    <h2>Mail</h2>
+                        <div>
+                            <img src={fitness} alt="Not found" className="projectImage"/>
+                            <h2>FitnessApp</h2>
+                        </div>
+
+                        </Link>
+                        <div className="next">
+                            <button className="button" onClick={handleClick} id='fitnessButton'>{rightButton}</button>
+                        </div>
+                    </div>}
+                
+                {state === "airplane" &&
+                    <div className="projectLayout">
+                        <div className="next">
+                            <button className="button" onClick={handleClickLeft} id='airplaneButtonLeft'>{leftButton}</button>
+                        </div>   
+                        <Link to="/projects/airplane" className="linkToProject">
+                   
+                        <div>
+                            <img src={airplane} alt="Not found" className="projectImage"/>
+                            <h2>AirplaneReservation</h2>
+                        </div>
+
+                        </Link>
+                        <div className="next">
+                            <button className="button" onClick={handleClick} id='airplaneButton'>{rightButton}</button>
+                        </div>
+                    </div>
+                }
+                {state === "mail" &&
+                    <div className="projectLayout">
+                        <div className="next">
+                            <button className="button" onClick={handleClickLeft} id='mailButtonLeft'>{leftButton}</button>
+                        </div>
+                        <Link to="/projects/mail" className="linkToProject">
+
+                        <div>
+                            <img src={mail} alt="Not found" className="projectImage"/>
+                            <h2>Mail</h2>
+                        </div>
+
+                        </Link>
+                        <div className="next">
+                            <button className="button" onClick={handleClick} id='mailButton'>{rightButton}</button>
+                        </div>
+                    </div>}
                 </div>
-                <div className="next">
-                    <button className="button" onClick={handleClick} id='mailButton'>{rightButton}</button>
-                </div>
-            </div>
+                </CSSTransition>
+            </SwitchTransition>
+
 
         </div>
      );

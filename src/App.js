@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Projects from './Projects';
 import ProjectDetails from './ProjectDetails';
 import About from './About';
+import NoPage from './NoPage';
 
 function App() {
   return (
@@ -15,16 +16,19 @@ function App() {
         <div className="content">
           <Switch>
             <Route exact path="/">
-              <Home />
+              <About />
             </Route>
-            <Route path="/projects">
+            <Route exact path="/projects">
               <Projects />
             </Route>
-            <Route path="/projects/:id">
+            <Route  exact path="/projects/:name">
               <ProjectDetails />
             </Route>
             <Route path="/about">
               <About />
+            </Route>
+            <Route path="*">
+              <NoPage />
             </Route>
           </Switch>
         </div>
