@@ -7,7 +7,7 @@ const About = () => {
             <div className="description">
                 <img src={profile} alt="not found" className="profilePic" />
                 <div className="aboutMe">
-                    I'm an aspiring web developer, I'm pretty confident using Python(Flask or Django), HTML, CSS and Vanilla Javascript(learning React)
+                    I'm an aspiring web developer, I'm pretty confident using Python(Flask or Django), HTML, CSS and Vanilla Javascript.I'm learning react(This portfolio is build using it).
                     Feel free to check out all my projects on GitHub (some of them included in this portfolio). I'm comfortable with git and fluent in English  I've studied Mechatronics in Warsaw University of Technology but most of my web development skills comes from 2 courses from Harvard: 
                     CS50 nad it's continuation CS50W.
                 </div>
