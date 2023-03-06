@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import Fitness from "./Fitness";
-import Airplane from "./Airplane";
-import Mail from "./Mail";
+import Fitness from "../components/Fitness";
+import Airplane from "../components/Airplane";
+import Messenger from "../components/Messenger";
 
 const ProjectDetails = () => {
     const toTop = ()=>{
@@ -15,8 +15,8 @@ const ProjectDetails = () => {
             <Fitness />}
             {name === 'airplane' && 
             <Airplane />}
-            {name === 'mail' && 
-            <Mail />}
+            {name === 'messenger' &&
+            <Messenger />}
         <button className="top" onClick={toTop}>Back to top</button>
         </div>
      );

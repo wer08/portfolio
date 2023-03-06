@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './Navbar';
-import Home from './Home';
+import Navbar from './components/Navbar';
+import Home from './containers/Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Projects from './Projects';
-import ProjectDetails from './ProjectDetails';
-import About from './About';
-import NoPage from './NoPage';
+import Projects from './containers/Projects';
+import ProjectDetails from './containers/ProjectDetails';
+import About from './containers/About';
+import NoPage from './containers/NoPage';
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import profile from './media/profile.jpeg'
+import profile from '../media/profile.jpeg'
 
 const About = () => {
     return ( 

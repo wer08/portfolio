@@ -1,8 +1,8 @@
-import airplane from "./media/Airplane.jpg"
-import airplaneBooked from "./media/airplaneBooked.jpg"
-import airplaneChoice from "./media/airplaneChoice.jpg"
-import airplaneChosen from "./media/airplaneChosen.jpg"
-import airplanePayment from "./media/airplanePayment.jpg"
+import airplane from "../media/Airplane.jpg"
+import airplaneBooked from "../media/airplaneBooked.jpg"
+import airplaneChoice from "../media/airplaneChoice.jpg"
+import airplaneChosen from "../media/airplaneChosen.jpg"
+import airplanePayment from "../media/airplanePayment.jpg"
 
 const Airplane = () => {
     return ( 

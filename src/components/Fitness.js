@@ -1,7 +1,7 @@
-import fitnessCommunity from "./media/fitnessCommunity.jpg"
-import fitnessDashboard from "./media/fitnessDashboard.jpg"
-import fitnessDiet from "./media/fitnessDiet.jpg"
-import fitnessExercise from "./media/fitnessExercise.jpg"
+import fitnessCommunity from "../media/fitnessCommunity.jpg"
+import fitnessDashboard from "../media/fitnessDashboard.jpg"
+import fitnessDiet from "../media/fitnessDiet.jpg"
+import fitnessExercise from "../media/fitnessExercise.jpg"
 
 const Fitness = () => {
     return ( 

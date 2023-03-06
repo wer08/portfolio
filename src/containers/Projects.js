@@ -1,6 +1,6 @@
-import mail from "./media/mail.jpg"
-import airplane from "./media/Airplane.jpg"
-import fitness from "./media/Fitness.jpg"
+import Messenger_home from "../media/Messenger_home.png"
+import airplane from "../media/Airplane.jpg"
+import fitness from "../media/Fitness.jpg"
 import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faChevronRight} from '@fortawesome/free-solid-svg-icons'
@@ -33,7 +33,7 @@ const Projects = () => {
         }
         else if(id === 'airplaneButton')
         {
-            setState('mail');
+            setState('messenger');
         }
         else
         {
@@ -46,7 +46,7 @@ const Projects = () => {
         console.log(id);
         if (id === 'fitnessButtonLeft')
         {
-            setState('mail');
+            setState('messenger');
         }
         else if(id === 'airplaneButtonLeft')
         {
@@ -103,21 +103,21 @@ const Projects = () => {
                         </div>
                     </div>
                 }
-                {state === "mail" &&
+                {state === "messenger" &&
                     <div className="projectLayout">
                         <div className="next">
-                            <button className="button" onClick={handleClickLeft} id='mailButtonLeft'>{leftButton}</button>
+                            <button className="button" onClick={handleClickLeft} id='messengerButtonLeft'>{leftButton}</button>
                         </div>
-                        <Link to="/projects/mail" className="linkToProject">
+                        <Link to="/projects/messenger" className="linkToProject">
 
                         <div>
-                            <img src={mail} alt="Not found" className="projectImage"/>
-                            <h2>Mail</h2>
+                            <img src={Messenger_home} alt="Not found" className="projectImage"/>
+                            <h2>Messenger</h2>
                         </div>
 
                         </Link>
                         <div className="next">
-                            <button className="button" onClick={handleClick} id='mailButton'>{rightButton}</button>
+                            <button className="button" onClick={handleClick} id='messengerButton'>{rightButton}</button>
                         </div>
                     </div>}
                 </div>
