@@ -1,32 +1,30 @@
 {
   "files": {
     "main.css": "/static/css/main.63a40a94.css",
-    "main.js": "/static/js/main.049f1f60.js",
+    "main.js": "/static/js/main.cd85fbac.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/Fitness.jpg": "/static/media/Fitness.a7742ea87ff8709558a7.jpg",
     "static/media/airplaneBooked.jpg": "/static/media/airplaneBooked.00ac56eacec364258a28.jpg",
     "static/media/airplaneChoice.jpg": "/static/media/airplaneChoice.8d7f4325c7e04b69634d.jpg",
     "static/media/airplaneChosen.jpg": "/static/media/airplaneChosen.9dcb0d934e07cf277a7f.jpg",
-    "static/media/mailSent.jpg": "/static/media/mailSent.5f5eca8ff59749f6cab3.jpg",
     "static/media/airplanePayment.jpg": "/static/media/airplanePayment.b31d3fb48470d57056e1.jpg",
     "static/media/fitnessExercise.jpg": "/static/media/fitnessExercise.2946b851d30153af6e67.jpg",
     "static/media/fitnessDiet.jpg": "/static/media/fitnessDiet.fda0965dcf27d7278300.jpg",
-    "static/media/mailArchive.jpg": "/static/media/mailArchive.90ec3afb378e71c01a6c.jpg",
-    "static/media/mail.jpg": "/static/media/mail.780a4bf11238ce62cc36.jpg",
     "static/media/fitnessDashboard.jpg": "/static/media/fitnessDashboard.84ecefa4ffc877ae5065.jpg",
     "static/media/fitnessCommunity.jpg": "/static/media/fitnessCommunity.35be5d44ce442673e9a9.jpg",
-    "static/media/mailCompose.jpg": "/static/media/mailCompose.7b408b2ee9c16740500d.jpg",
-    "static/media/mailDetails.jpg": "/static/media/mailDetails.6575784fd04bd37d4d1d.jpg",
     "static/media/Airplane.jpg": "/static/media/Airplane.36b0847921c73412585f.jpg",
     "static/media/profile.jpeg": "/static/media/profile.834e3f8d1a2cbee9c5b1.jpeg",
+    "static/media/Mesenger_profile.png": "/static/media/Mesenger_profile.4b400b7b924e28e62ceb.png",
+    "static/media/Mesenger_login.png": "/static/media/Mesenger_login.155a0d220c32bbcc7676.png",
+    "static/media/Messenger_home.png": "/static/media/Messenger_home.197ae860f7bc2bc8bbe2.png",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.63a40a94.css.map": "/static/css/main.63a40a94.css.map",
-    "main.049f1f60.js.map": "/static/js/main.049f1f60.js.map",
+    "main.cd85fbac.js.map": "/static/js/main.cd85fbac.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.63a40a94.css",
-    "static/js/main.049f1f60.js"
+    "static/js/main.cd85fbac.js"
   ]
 }
