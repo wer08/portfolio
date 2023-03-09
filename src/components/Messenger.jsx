@@ -27,6 +27,7 @@ const Messenger = () => {
             <img src={Messenger_home} alt="Not found" className="projectImage"></img>
             <div className="paraDesc">
                 This is the main communicator.User has the ability to serach for contacts and message them. There is an emoji selector implemented.
+                User gets notification when new message is sent to him. App provides the ability to send text messages as well as pictures.
             </div>
         </div>
         <a href="https://github.com/wer08/Django_React_Project"> GitHub</a>
