@@ -7,7 +7,7 @@ const Fitness = () => {
     return ( 
         <div className="details">
             <h1>Fitness</h1>
-            <div>This Web application was build using Django and PostgreSQL for the back-end and HTML, CSS and vanilla JS for front-end</div>
+            <div>This is a fitness application that generates daily menus based on user preferences and tracks their daily calorie intake. The application includes features such as a community tab that allows users to post to other users, a food diary, and a calorie tracker. The backend is built using Django and PostgreSQL, while the frontend is built using HTML, CSS, and JavaScript. The application also uses Celery to perform background tasks such as sending email notifications.</div>
             <div className="para">
                 <h3>Exercise tab</h3>
                 <img src={fitnessExercise} alt="Not found" className="projectImage"></img>

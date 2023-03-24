@@ -8,7 +8,7 @@ const Airplane = () => {
     return ( 
     <div className="details">
         <h1>Airplane Reservation</h1>
-        <div>This Web App was build using Flask, SQLite, HTML, CSS and JavaScript</div>
+        <div>This is a web application that allows users to search for flights and buy tickets. The application includes features such as a search bar that lets users search for flights based on their preferred dates and destinations, and a payment system that allows users to purchase tickets. The backend is built using Flask and SQLite, while the frontend is built using HTML, CSS, and JavaScript. The application is responsive and has a clean and modern design.</div>
         <div className="para">
             <h3>Main Page</h3>
             <img src={airplane} alt="Not found" className="projectImage"></img>
