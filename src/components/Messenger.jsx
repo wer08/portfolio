@@ -6,7 +6,7 @@ const Messenger = () => {
     return (         
     <div className="details">
         <h1>Messenger</h1>
-        <div>This Web application was build using Django and PostgreSQL for the back-end and CSS and React in front-end</div>
+        <div>I developed a full-stack web application using Django, Django REST Framework, Channels, React, and Redux, along with Socket.IO for real-time communication. The application allows users to communicate with each other in real-time through a contact-based system, with features such as adding contacts and registering with Google or Facebook. The application is designed to run using Docker Compose, making setup and deployment a breeze.</div>
         <div className="para">
             <h3>Login tab</h3>
             <img src={Mesenger_login} alt="Not found" className="projectImage"></img>
